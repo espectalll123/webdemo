@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="es" manifest="/cache.appcache">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" />
+    <title>Demo web</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    <script src="/js/jquery-2.1.4.min.js"></script>
+    <script src="/js/index.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+	<h1>Una web particular</h1>
+      </div>
+      <div id="sidebar">
+	<p><a href="#">Inicio</a></p>
+	<p><a href="#styles">Párrafos y estilos</a></p>
+	<p><a href="#links">Hipervínculos</a></p>
+	<p><a href="#tables">Tablas</a></p>
+	<p><a href="#lists">Listas</a></p>
+	<p><a href="#forms">Formularios</a></p>
+      </div>
+      <div id="content">
+	<p>Bienvenid@ a esta brillantemente diseñada,
+	  programada y humilde página web. Aquí su autor
+	  procedió a difundir la magia de su código por
+	  el mundo, ya que un soleado día del año dos
+	  mil y quince después de Cristo, recibió una
+	  inspiración divina del colegio de al láo' y
+	  se puso a teclear incesantemente hasta obtener
+	  este bello documento de lenguaje de marcas.</p>
+	<p>Esta página sirve como recurso para la
+	  demostración de HTML, CSS y ECMAScript; tanto
+	  para el aprendizaje de su autor y lectores como
+	  para mera contemplación. Espero sea de vuestro
+	  agrado. Un saludo :3</p>
+	<div id="styles">
+	  <h2 class="divTitle">Párrafos y estilos</h2>
+	  <p>A continuación tratamos texto en HTML
+	    mediante el uso de párrafos (como cabeceras)
+	    y etiquetas de estilo (negrita, cursiva...).
+	  <h1>Esto es un header &lt;h1&gt;</h1>
+	  <h2>Esto es un header &lt;h2&gt;</h2>
+	  <h3>Esto es un header &lt;h3&gt;</h1>
+	  <h4>Esto es un header &lt;h4&gt;</h4>
+	  <h5>Esto es un header &lt;h5&gt;</h5>
+	  <h6>Y esto es un header &lt;h6&gt;</h6>
+	  <p>
+	    Esto es un párrafo...
+	    <br />
+	    ...en el que he usado el tag &lt;br&gt;
+	    para hacer cambio de línea.
+	  </p>
+	  <p>
+	    <strong>Negrita</strong>
+	    con &lt;strong&gt
+	  </p>
+	  <p>
+	    <em>Cursiva</em>
+	    con &lt;em&gt
+	  </p>
+	 <p>Aquí tenemos un <sup>super</sup>índice con &lt;sup&gt</p>
+	 <p>Y aquí un <sub>sub</sub>índice con &lt;sub&gt</p>
+	</div>
+	<div id="links">
+	  <h2 class="divTitle">Hipervínculos</h2>
+	  <p>En esta sección de la exposición
+	    disponemos de una exquisita variedad de
+	    enlaces, que deleitará a los más exigentes
+	    sujetos.</p>
+	  <p>
+	    Aquí un enlace a
+	    <a
+	       href="https://duckduckgo.com"
+	       title="Cuac">DuckDuckGo</a>,
+	    un buscador decente que te respeta y ama.
+	    </a>
+	  </p>
+	  <a href="https://www.youtube.com/watch?v=D-UmfqFjpl0">
+	    <img
+	       src="img/wisdom.png"
+	       title="Esta foto te quiere"
+	       height="192" />
+	  </a>
+	  <p>
+	    Este es mi correo:
+	    <a
+	       href="mailto:alumno.132143@ies-azarquiel.es">
+	      alumno.132143@ies-azarquiel.es
+	    </a>
+	  </p>
+	  <p>
+	    Ya que dije que esta web sería una demo de ECMAScript,
+	    no me queda más remedio que adjuntar algo que muestre
+	    un <em>poquiiiiiiito</em> de su potencial. Pero sólo
+	    un pelín.
+	    <a
+	       href="javascript:rickroll()">
+	      ¡Pulsa aquí para entrar al Valhalla!</a>
+	    <sub><em>
+	      *Nota: puede que el enlace no funcione; si es así,
+	      revisa que tu navegador lo soporta y que esté
+	      activada su ejecución.
+	    </em></sub>
+	  </p>
+	  <p>
+	    <strong>One More Thing</strong>: el panel
+	    <span class="with-topbar">de encima</span>
+	    <span class="with-sidebar">del lateral izquierdo</span>
+	    es, de hecho, un conjunto de hipervínculos. Cada uno es
+	    un &lt;p&gt que contiene un
+	    &lt;a href&equals;&quot;&num;url&quot;&gt;&semi;
+	    asumiéndose que <em>url</em> es el id de un &lt;div&gt
+	    dentro de la web, se puede saltar de una parte a otra.
+	    ¡Prueba, que no muerde!
+	  </p>
+	</div>
+	<div id="tables">
+	  <h2 class="divTitle">Tablas</h2>
+	  <p>
+	    No era mi intención programar esto (las tablas HTML son
+	    el demonio); no obstante, si quiero sobrevivir, es
+	    esencial que estén incluidas en esta web... bueno, no
+	    realmente, pero vamos...
+	  </p>
+	  <table>
+	    <tr>
+	      <th>Lunes</th>
+		  <th>Martes</th>
+	    </tr>
+	    <tr>
+	      <td>Inglés</td>
+	      <td class="noBottom">Bases de datos</td>
+	    </tr>
+		<tr>
+		  <td class="noBottom">Bases de datos</td>
+          <td class="noTop">&nbsp;</td>
+		</tr>
+		<tr>
+          <td class="noTop">&nbsp;</td>
+		  <td>Sistemas</td>
+		</tr>
+		<tr>
+		  <td colspan="2">Recreo</td>
+		</tr>
+		<tr>
+		  <td class="noBottom">Programación</td>
+		  <td>Sistemas</td>
+		</tr>
+		<tr>
+		  <td class="noTop">&nbsp;</td>
+		  <td>Formación</td>
+		</tr>
+		<tr>
+		  <td>Formación</td>
+		  <td>Inglés</td>
+	  </table>
+	</div>
+	<div id="lists">
+	  <h2 class="divTitle">Listas</h2>
+	  <p>
+	    Procedo ahora a hacer... listas. Oh Dios mío. No puedo
+	    contener el hype de lo épico que va a ser.
+	    <b>My body is ready.</b>
+	  </p>
+	  <p>Debajo tenemos una lista ordenada...</p>
+	  <ul>
+	    <li>Comida</li>
+	    <ul>
+	      <li>Leche</li>
+	      <li>Azúcar</li>
+	      <li>Huevos</li>
+	      <li>Chiquilín</li>
+	    </ul>
+	    <li>Vocaloids</li>
+	    <ul>
+	      <li>Oficiales</li>
+	      <ul class="vocaloidUl">
+		<li>初音ミク</li>
+		<li>鏡音リン</li>
+		<li>鏡音レン</li>
+		<li>巡音ルカ</li>
+	      </ul>
+	      <li>Utau</li>
+	      <ul>
+		<li>重音テト</li>
+		<li>桃音モモ</li>
+	      </ul>
+	    </ul>
+	  </ul>
+	  <p>
+	    ...pero la que acabas de ver es una lista desordenada. :3
+	  </p>
+	  <p>
+	    Para crear la lista desordenada, se han usado las etiquetas
+	    &lt;ul&gt y &lt;li&gt. Además de una Miku adorable añadida
+	    con la propiedad CSS <code>list-style-image</code>.
+	  </p>
+	  <ol>
+	    <li>Ser かわいいです</li>
+	    <li>Dominar el mundo</li>
+	    <li>Conseguir el amor paternal que no se tuvo de niño</li>
+	    <li>Pedir perdón por todo y volverse austero y humilde</li>
+	  </ol>
+	  <p>
+	    Esta <em>sí</em> que era una lista ordenada, por cierto.
+	    Con las etiquetas &lt;ol&gt y &lt;li&gt. Y nada más.
+	  </p>
+	</div>
+	<div id="forms">
+	  <h2 class="divTitle">Formularios</h2>
+	  <p>
+	    Aquí os dejo un formulario (sí, uno; pido perdón por la
+	    publicidad engañosa, por favor no me metan en la cárcel,
+	    está todo oscuro y hace mucho frío) relativamente básico
+	    con el que hacer cosas tan maravillosas como rellenar
+	    campos y pulsar en Enviar. Lo sé. Es el Edén del código.
+	  </p>
+	  <form id="register" action="register" method="post">
+	    <fieldset>
+	      <legend>Regístrese ya en XerzNetwork | la75</legend>
+	      <div>
+		<span class="fieldDesc">Usuario</span>
+		<input type="text" name="username" required />
+	      </div>
+	      <div>
+		<span class="fieldDesc">Contraseña</span>
+		<input type="password" name="password" required />
+	      </div>
+	      <div>
+		<span class="fieldDesc">Nombre</span>
+		<input type="text" name="firstname" />
+	      </div>
+	      <div>
+		<span class="fieldDesc">Apellidos</span>
+		<input type="text" name="lastname" />
+	      </div>
+	      <div>
+		<span class="fieldDesc">Fecha de nacimiento</span>
+		<input type="date" name="birthdate" />
+	      </div>
+	      <div>
+		<span class="fieldDesc">Género</span>
+		<input type="radio" name="genre" value="male" />
+		Hombre
+		<input type="radio" name="genre" value="female" />
+		Mujer
+		<input type="radio" name="genre" value="other" checked />
+		Otro
+	      </div>
+	      <div>
+		<span class="fieldDesc">Correo</span>
+		<input type="email" name="email" required />
+	      </div>
+	      <input class="submit" type="submit" value="Enviar">
+	    </fieldset>
+	  </form>
+	</div>
+      </div>
+      <div id="footer">
+	<p>Programado en 2015 con &lt;3 por <b>Francisco Gómez</b></p>
+      </div>
+    </div>
+  </body>
+</html>

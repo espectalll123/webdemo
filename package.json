@@ -1,0 +1,31 @@
+{
+  "name": "WebDemo",
+  "version": "1.0.0",
+  "description": "Servidor de pruebas",
+  "keywords": [
+    "kek"
+  ],
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "install": "coffee -c --no-header server.coffee"
+  },
+  "author": {
+    "name": "Francisco Gómez",
+    "email": "espectalll123@kydara.com"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "engines": {
+    "node": ">= 0.6.0",
+    "npm": ">= 1.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "coffee-script": "^1.0.0",
+    "express": "^4.13.3",
+    "jade": "^1.11.0",
+    "mongoose": "^4.2.2"
+  }
+}
