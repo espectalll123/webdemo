@@ -2,8 +2,12 @@ rickroll = function() {
     d = new Date();
     d.setTime(d.getTime() + 1000 * 60 * 60);
     $('#container').append(
-	'<video id="rickRoll" src="v/rickroll.mp4"'
-	+ 'autoplay loop />');
+        '<video id="rickRoll" autoplay loop>'
+        + '<source type="video/webm" src="./v/rickroll.webm" />'
+        + '<source type="video/mp4" src="./v/rickroll.mp4" />'
+        + '</video>'
+    );
+    
     document.cookie = 'rickRolled=true; '
         + 'expires=' + d.toUTCString();
 }
