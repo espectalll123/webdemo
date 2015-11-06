@@ -7,6 +7,7 @@ rickroll = function() {
         + '<source type="video/mp4" src="./v/rickroll.mp4" />'
         + '</video>'
     );
+    $('#rickRoll')[0].oncontextmenu = new Function('return false');
     
     document.cookie = 'rickRolled=true; '
         + 'expires=' + d.toUTCString();
@@ -14,7 +15,7 @@ rickroll = function() {
 
 $(document).ready(function() {
     if(document.cookie.substring(0, 15) == 'rickRolled=true') {
-	alert("Por cierto, eso fue una demo de vídeo HTML5 ;)");
-	document.cookie = 'rickRolled=; expires=Thu, 01-Jan-70 00:00:01 GMT;';
+        alert("Por cierto, eso fue una demo de vídeo HTML5 ;)");
+	    document.cookie = 'rickRolled=; expires=Thu, 01-Jan-70 00:00:01 GMT;';
     };
 });
