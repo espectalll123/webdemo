@@ -5,10 +5,10 @@
   "keywords": [
     "kek"
   ],
-  "main": "server.js",
+  "main": "server.coffee",
   "scripts": {
-    "start": "node server.js",
-    "install": "coffee -c --no-header server.coffee"
+    "start": "coffee server.coffee",
+    "install": "cake build"
   },
   "author": {
     "name": "Francisco Gómez",

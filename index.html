@@ -11,17 +11,17 @@
   </head>
   <body>
     <div id="container">
-      <div id="header">
+      <header>
 	<h1>Una web particular</h1>
-      </div>
-      <div id="sidebar">
+      </header>
+      <sidebar class="noBorder">
 	<p><a href="#">Inicio</a></p>
 	<p><a href="#styles">Párrafos y estilos</a></p>
 	<p><a href="#links">Hipervínculos</a></p>
 	<p><a href="#tables">Tablas</a></p>
 	<p><a href="#lists">Listas</a></p>
 	<p><a href="#forms">Formularios</a></p>
-      </div>
+      </sidebar>
       <div id="content">
 	<p>Bienvenid@ a esta brillantemente diseñada,
 	  programada y humilde página web. Aquí su autor
@@ -78,7 +78,8 @@
 	    un buscador decente que te respeta y ama.
 	    </a>
 	  </p>
-	  <a href="https://www.youtube.com/watch?v=D-UmfqFjpl0">
+	  <a class="img"
+	     href="https://www.youtube.com/watch?v=D-UmfqFjpl0">
 	    <img
 	       src="./img/wisdom.png"
 	       title="Esta foto te quiere"
@@ -96,8 +97,7 @@
 	    no me queda más remedio que adjuntar algo que muestre
 	    un <em>poquiiiiiiito</em> de su potencial. Pero sólo
 	    un pelín.
-	    <a
-	       href="javascript:rickroll()">
+	    <a class="goToValhalla">
 	      ¡Pulsa aquí para entrar al Valhalla!</a>
 	    <sub><em>
 	      *Nota: puede que el enlace no funcione; si es así,
@@ -254,14 +254,18 @@
 		<span class="fieldDesc">Correo</span>
 		<input type="email" name="email" required />
 	      </div>
+	      <div>
+		<span class="fieldDesc">Color</span>
+		<input type="color" name="color" />
+	      </div>
 	      <input class="submit" type="submit" value="Enviar">
 	    </fieldset>
 	  </form>
 	</div>
       </div>
-      <div id="footer">
+      <footer>
 	<p>Programado en 2015 con &lt;3 por <b>Francisco Gómez</b></p>
-      </div>
+      </footer>
     </div>
   </body>
 </html>

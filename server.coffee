@@ -16,6 +16,7 @@ userSchema = new mongoose.Schema
 
         birthDate: Date
         genre: String
+        color: String
 
         eMail: String
 
@@ -34,7 +35,8 @@ app.post '/register', (req, res) ->
                 if d.length isnt 0
                         res.render 'register',
                                 title: "¡Fallido!"
-                                message: "El usuario ya existe; inténtelo con otro ID."
+                                message: "El usuario ya existe;" +
+                                        "inténtelo con otro ID."
                                 face: ':('
                 else
                         thisUser = new user
@@ -48,19 +50,23 @@ app.post '/register', (req, res) ->
 
                                 birthDate: new Date(req.body.birthdate)
                                 genre: req.body.genre
+                                color: req.body.color
 
                                 eMail: req.body.email
 
                         thisUser.save (err) ->
                                 if err
                                         title = "¡Fallido!"
-                                        message = "Se ha producido un error desconocido. Lo sentimos."
+                                        message = "Se ha producido un " +
+                                        "error desconocido. Lo sentimos."
                                         face = ':('
                                 else
                                         console.log( "New user: " +
                                                 req.body.username )
                                         title = "¡Registrado!"
-                                        message = "¡Gracias por registrarse! Abriremos próximamente..."
+                                        message = "¡Gracias por " +
+                                        "registrarse! Abriremos " +
+                                        "próximamente..."
                                         face = ':3'
                                 res.render 'register',
                                         title: title,
