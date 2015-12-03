@@ -5,23 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="favicon.ico" />
     <title>Demo web</title>
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <script src="./js/jquery-2.1.4.min.js"></script>
+    <script src="./js/skrollr.min.js"></script>
     <script src="./js/index.js"></script>
   </head>
   <body>
-    <div id="container">
-      <header>
-	<h1>Una web particular</h1>
+    <sidebar>
+      <a href="#">
+	<i class="fa fa-home"></i>
+	<span>Inicio</span>
+      </a>
+      <a href="#styles">
+	<i class="fa fa-header"></i>
+	<span>Párrafos y estilos</span>
+      </a>
+      <a href="#links">
+	<i class="fa fa-link"></i>
+	<span>Hipervínculos</span>
+      </a>
+      <a href="#tables">
+	<i class="fa fa-table"></i>
+	<span>Tablas</span>
+      </a>
+      <a href="#lists">
+	<i class="fa fa-list"></i>
+	<span>Listas</span>
+      </a>
+      <a href="#forms">
+	<i class="fa fa-check-square"></i>
+	<span>Formularios</span>
+      </a>
+    </sidebar>
+    <main id="skrollr-body">
+      <header data-top-bottom="height: 142px"
+	      data-bottom-top="height: 256px">
+	<div data-top-bottom="background-position: 0 0;
+			      height: 142px;
+			      line-height: 142px"
+	     data-bottom-top="background-position: 0 -200%;
+			      height: 256px;
+			      line-height: 256px">
+	  <h1>Una web particular</h1>
+	</div>
       </header>
-      <sidebar class="noBorder">
-	<p><a href="#">Inicio</a></p>
-	<p><a href="#styles">Párrafos y estilos</a></p>
-	<p><a href="#links">Hipervínculos</a></p>
-	<p><a href="#tables">Tablas</a></p>
-	<p><a href="#lists">Listas</a></p>
-	<p><a href="#forms">Formularios</a></p>
-      </sidebar>
       <div id="content">
 	<p>Bienvenid@ a esta brillantemente diseñada,
 	  programada y humilde página web. Aquí su autor
@@ -110,8 +138,7 @@
 	    <span class="with-topbar">de encima</span>
 	    <span class="with-sidebar">del lateral izquierdo</span>
 	    es, de hecho, un conjunto de hipervínculos. Cada uno es
-	    un &lt;p&gt que contiene un
-	    &lt;a href&equals;&quot;&num;url&quot;&gt;&semi;
+	    un &lt;a href&equals;&quot;&num;url&quot;&gt;&semi;
 	    asumiéndose que <em>url</em> es el id de un &lt;div&gt
 	    dentro de la web, se puede saltar de una parte a otra.
 	    ¡Prueba, que no muerde!
@@ -263,9 +290,9 @@
 	  </form>
 	</div>
       </div>
-      <footer>
-	<p>Programado en 2015 con &lt;3 por <b>Francisco Gómez</b></p>
-      </footer>
-    </div>
+    </main>
+    <footer>
+      <p>Programado en 2015 con &lt;3 por <b>Francisco Gómez</b></p>
+    </footer>
   </body>
 </html>

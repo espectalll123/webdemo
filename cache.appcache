@@ -1,11 +1,14 @@
 CACHE MANIFEST
 
+/js/jquery-2.1.4.min.js
+/js/skrollr.min.js
+/js/index.js
 /css/index.css
+/css/font-awesome.min.css
+/fonts/fontawesome-webfont.woff?v=4.5.0
+/img/soft-circle-scales.png
 /img/miku.ico
 /img/wisdom.png
 /img/hd.png
 /img/hawawa.gif
-/js/index.js
-/js/jquery-2.1.4.min.js
 /v/rickroll.webm
-

@@ -16,15 +16,17 @@ hawawa = (e) ->
         e.preventDefault()
         if document.cookie.indexOf('hawawa=true') < 0
                 document.cookie = 'hawawa=true; ' +
-                  'expires=Fri, 31 Dec 9999 23:59:59 GMT'
+                  'expires=Fri, 31-Dec-9999 23:59:59 GMT'
         window.location = $('.img').attr 'href'
 
-$(document).ready () ->
+$ ->
+        s = skrollr.init
+                forceHeight: false
         if document.cookie.indexOf('rickRolled=true') >= 0
                 alert 'Por cierto, eso fue una demo de vídeo HTML5 ;)'
                 document.cookie =
-                  'rickRolled=; expires=Thu, 01-Jan-70 00:00:01 GMT;'
+                  'rickRolled=; expires=Thu, 01-Jan-1970 00:00:01 GMT;'
         if document.cookie.indexOf('hawawa=true') >= 0
-                $('.img img').attr( 'src', './img/hawawa.gif')
+                $('.img img').attr( 'src', './img/hawawa.gif' )
         $('.goToValhalla').click rickroll
         $('.img img').click hawawa

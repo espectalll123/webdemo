@@ -9,8 +9,8 @@
     text-decoration: none;
     border-left: 2px solid #00ad99;
     padding-left: 2px;
+    transition: border-left-width .1s;
 }
-
 :not(img):not(sidebar) > p a:visited {
     color: #a268c0;
     border-left: 2px solid #a268c0;
@@ -18,14 +18,14 @@
 }
 :not(img):not(sidebar) > p a:hover {
     color: #db9b40;
-    border-left-width: 3px; // solid #db9b40;
+    border-left-width: 4px; // solid #db9b40;
     cursor: pointer;
 }
-:not(img):not(sidebar) > p a:active {
+:not(img):not(sidebar) > p a:focus {
     color: #db5340;
 }
 
-#container {
+main {
     z-index: 0;
     width: 600px;
     margin: auto; padding: 0 0 72px;
@@ -35,41 +35,62 @@
 }
 
 header {
-    padding-left: 12px;
-    height: 128px;
-    line-height: 128px;
+    height: 148px;
+    line-height: 148px;
     vertical-align: middle;
     background: url('../img/header.png');
     background: linear-gradient(
 			to bottom,
-			rgb(86,157,190) 0%,
-			rgb(104,192,182) 100%);
+			rgb(0,85,123) 0%,
+			rgb(30,160,145) 100%);
     background-size: cover;
     color: white;
     border-radius: 8px 8px 0 0;
     cursor: default;
 }
+header div {
+    background: url('../img/soft-circle-scales.png');
+    border-radius: 8px 8px 0 0;
+}
+header h1 {
+    padding-left: 12px;
+    text-shadow: 0 1px 1px black;
+}
 
 sidebar {
     z-index: 1;
     position: fixed;
-    width: 164px; max-height: 250px;
+    width: 172px; max-height: 250px;
     padding-left: 24px;
     overflow: auto;
     top: 21px; left: 0;
-    background-color: #559e83;
+    background: #559e83;
+    background: linear-gradient(
+			to right,
+			#559e83 0%,
+			rgba(35, 85, 150, 0.4) 100%);
     color: white;
+    border: 1px solid #559e83;
+    border-left: none;
     box-shadow: 16px 0 46px -2px black;
 }
-sidebar p a {
+sidebar a {
+    display: block;
+    margin: 16px 8px 16px 8px;
     color: white;
-    font-style: italic;
     text-decoration: none;
+}
+sidebar a i {
+    width: 20px;
+}
+sidebar a span {
+    font-style: italic;
     transition: font-weight .1s;
 }
-sidebar p a:hover {
+sidebar a span:hover {
     font-weight: bold;
 }
+
 .with-topbar {
     display: none;
 }
@@ -88,6 +109,15 @@ a img {
     display: block;
     margin: auto;
     border-radius: 2px;
+    transition: box-shadow .5s,
+		width .5s,
+		height .5s;
+}
+a img:hover {
+    box-shadow: 0 6px 24px -6px rgba(0, 0, 0, .7);
+}
+#content a img:hover {
+    height: 212px;
 }
 table {
     margin: auto;
@@ -174,7 +204,7 @@ header, sidebar, .divTitle, footer {
 }
 
 @media screen and (min-width: 1600px) {
-    #container {
+    main {
 	width: 1024px;
     }
     fieldset {
@@ -191,6 +221,12 @@ header, sidebar, .divTitle, footer {
 	white-space: nowrap;
 	top: 0; left: 0;
 	box-shadow: none;
+	background: linear-gradient(
+			    to bottom,
+			    #559e83 55%,
+			    rgba(35, 85, 150, 0.5) 100%);
+	border-top: none;
+	line-height: 50px;
     }
     sidebar p {
 	display: inline-block;
@@ -200,6 +236,9 @@ header, sidebar, .divTitle, footer {
     sidebar::-webkit-scrollbar {
 	display: none;
     }
+    sidebar a {
+	display: inline;
+    }
     .with-topbar {
 	display: initial;
     }
@@ -207,7 +246,7 @@ header, sidebar, .divTitle, footer {
 	display: none;
     }
 
-    #container {
+    main {
 	margin-top: 64px;
 	padding-bottom: 64px;
 	width: 720px;
@@ -223,12 +262,29 @@ header, sidebar, .divTitle, footer {
 }
 
 @media screen and (max-width: 735px) {
-    #container {
-	margin-top: 52px;
+    main {
 	width: 100%;
+	margin-top: 48px;
+	padding-bottom: 88px;
     }
-    #container, header {
+    main, header, header div {
 	border-radius: 0;
+    }
+    sidebar {
+	height: 48px;
+	text-align: center;
+	font-size: 32px;
+	line-height: 46px;
+    }
+    sidebar a {
+	display: inline;
+	margin: 0;
+    }
+    sidebar a i {
+	width: 36px;
+    }
+    sidebar a span {
+	display: none;
     }
 }
 
